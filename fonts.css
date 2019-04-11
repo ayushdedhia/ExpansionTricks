@@ -1,9 +1,14 @@
-@font-face{
-	font-family: Ayush;
-	src: url(fonts/Montserrat-Regular.ttf);
+@font-face {
+    font-family: Montserrat;
+    src: url('fonts/Montserrat-Regular.ttf');
 }
 
-@font-face{
-	font-family: Poppins;
-	src: url(fonts/Poppins-Regular.ttf);
+@font-face {
+    font-family: Poppins;
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Calibri;
+    src: url('fonts/calibri.ttf');
 }
