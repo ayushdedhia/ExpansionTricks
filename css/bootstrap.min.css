@@ -4383,7 +4383,7 @@ tbody.collapse.show {
 
 .navbar-nav .dropdown-menu {
     position: static;
-    float: none
+    float: none;
 }
 
 .navbar-text {
@@ -6596,6 +6596,10 @@ button.bg-primary:hover {
 
 .bg-secondary {
     background-color: #6c757d !important
+}
+
+.bg-white {
+    background-color: #fff !important
 }
 
 a.bg-secondary:focus,

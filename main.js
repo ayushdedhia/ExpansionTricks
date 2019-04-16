@@ -1,28 +1,56 @@
-var img = ["images/doggy.jpg",
-"images/forest.jpg",
-"images/lake.jpg",
-"images/pexels.jpg",
-"images/pexels2.jpg",
-"images/pexels3.jpg",
-"images/water.jpg",
-"images/water2.jpg",
-"images/water3.jpg" ];
+$(document).ready(function(){
+    
+    myFunction = function(){
 
-var i = 0;
+        var userName = $('#user');
+        var password = $('#password');
+        var confirmPassword = $('#con-password');
+        var button = $('#btn');
+        var modal = $('#myModal');
 
-function createSlide(){
-    document.getElementById('slide').src = img[i];
+        if ( userName.val() !== "" && password.val() !== "" && confirmPassword.val() !== "" ) {
+            
+            if ( password.val() == confirmPassword.val() ) {
 
-    if (i < (img.length - 1)) {
+                button.attr({
+                    "data-toggle": "modal",
+                    "data-target": "#emptyFields"
+                });
 
-        i++;
+                changeData = function() {
 
-    } else {
+                    $('#emptyFields h5').addClass('text-success').text("Success");
 
-        i = 0;
+                    $('#emptyFields #m-body').addClass('text-capitalize').text("Your account was successfully verified!");
 
-    }
+                    $('.modal-footer button').removeClass('btn-secondary').addClass('btn-success');
 
-}
+                }
 
-setInterval(createSlide, 3000);
+                changeData();
+
+                $(':input','#form')
+                .not(':button, :submit, :reset, :hidden')
+                .val('');
+
+            } else {
+
+
+                
+            }
+
+        } else {
+
+            button.attr({
+                "data-toggle": "modal",
+                "data-target": "#emptyFields"
+            });
+
+        }
+
+    };
+
+    $('#myTable tbody tr td:nth-child(5)').prepend('+91 ');
+    $('#myTable tbody tr td').addClass('align-middle');
+
+});
