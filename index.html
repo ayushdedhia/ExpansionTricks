@@ -17,7 +17,10 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="swiper-master/dist/js/swiper.min.js"></script>
+   <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+   <link rel="stylesheet" href="swiper-master/dist/css/swiper.css">
+   <link rel="stylesheet" href="swiper-master/dist/css/swiper.min.css">
    <script src="main.js"></script>
    <script src="live.js"></script>
    <script src="api.js"></script>
@@ -456,12 +459,12 @@
    </section>
    <!------------------------------------------- Advertise Ends ------------------------------------------>
 
-   <section class="py-5">
+   <section class="pb-5">
       <div class="container-fluid bg-info py-5">
-         <h4 class="text-capitalize text-center text-white">What does your name represents?</h4>
+         <h4 class="text-capitalize text-center text-white" id="fornow">What does your name represents?</h4>
          <div class="centerDiv text-center">
             <div class="details">
-               <label for="name" class="text-capitalize text-white">Enter your name</label><br>
+               <label for="name" class="text-capitalize text-white" id="label">Enter your name</label><br>
                <input type="text" id="name">
             </div>
 
@@ -477,11 +480,32 @@
       </div>
    </section>
 
+   <!-------------------------------------------- Swipper start ------------------------------------------>
+   <section>
+      <div class="swiper-container">
+         <div class="swiper-wrapper">
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/9)"></div>
+           <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)"></div>
+         </div>
+         <!-- Add Pagination -->
+         <div class="swiper-pagination"></div>
+       </div>
+   </section>
+   <!-------------------------------------------- Swipper Ends ------------------------------------------->
+
    <!------------------------------------------ Footer Starts -------------------------------------------->
    <section>
       <footer class="page-footer font-small bg-primary text-white">
          <!-- Copyright -->
-         <div class="footer-copyright text-white text-center py-3">© 2019 Copyright:
+         <div class="footer-copyright text-white text-center py-3">&copy; 2019 Copyright:
             <a href="https://www.youtube.com/EXPANSIONTRICKS" class="text-white">Expansion Tricks.com</a>
          </div>
          <!-- Copyright -->
