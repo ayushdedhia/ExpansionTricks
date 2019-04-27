@@ -1,10 +1,10 @@
+var loader = $('#preLoader');
+
+function preLoad() {
+    loader.style.display = "none";
+}
+
 $(document).ready(function(){
-
-    var loader = $('#preLoader');
-
-    function preLoad() {
-        loader.style.display = "none";
-    }
 
     var userName = $('#user');
     var password = $('#password');
